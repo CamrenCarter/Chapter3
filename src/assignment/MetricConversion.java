@@ -10,6 +10,8 @@ public class MetricConversion {
         Scanner input = new Scanner(System.in);
         value = input.nextInt();
 
+        conversionToCent(value);
+        conversionToliter(value);
 
     }
    public static void conversionToCent(double value){
@@ -17,7 +19,14 @@ public class MetricConversion {
 
         centimeter = value / 2.54;
 
-        System.out.println("Converted " + value + " inches to " + centimeter + "centimeter(s)");
+        System.out.println("Converted " + value + " inches to " + centimeter + " centimeter(s)");
    }
-   public static void conversionToliter(double )
+   public static void conversionToliter(double value){
+        double liters;
+
+        liters = value / 3.7854;
+
+        System.out.println("Converted " + value + " gallons to " + liters + " liter(s)");
+
+   }
 }
